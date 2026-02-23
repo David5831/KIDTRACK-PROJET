@@ -1,7 +1,7 @@
 # KidTrack - Application de Gestion de Crèche
 
 ## 📋 Description
-Application complète de gestion d'une crèche permettant aux parents de suivre les activités quotidiennes de leurs enfants, aux éducateurs de gérer les activités et repas, et aux administrateurs de gérer l'ensemble du système.
+Application de gestion d'une crèche ou d'une école maternelle permettant aux parents de suivre les activités quotidiennes de leurs enfants, aux éducateurs de gérer les activités et repas, et aux administrateurs de gérer l'ensemble du système.
 
 ## 🏗️ Architecture
 
@@ -70,8 +70,8 @@ mvn clean install
 mvn spring-boot:run
 ```
 
-L'API sera accessible sur `http://localhost:8080`
-Swagger UI: `http://localhost:8080/swagger-ui.html`
+L'API sera accessible sur `http://localhost:8008`
+Swagger UI: `http://localhost:8008/swagger-ui.html`
 
 ### Frontend
 
@@ -84,7 +84,7 @@ flutter pub get
 2. **Configurer l'URL du backend**
 Modifier dans `lib/services/auth_service.dart` et autres services:
 ```dart
-static const String baseUrl = 'http://votre-ip:8080/api';
+static const String baseUrl = 'http://votre-ip:8008/api';
 ```
 
 3. **Lancer l'application**
@@ -181,26 +181,4 @@ flutter run
 - `GET /api/notifications/user/{userId}/unread` - Notifications non lues
 - `PUT /api/notifications/{id}/read` - Marquer comme lu
 
-## 🛠️ Technologies Utilisées
-
-### Backend
-- Spring Boot 3.5.6
-- Spring Data JPA
-- Spring Security
-- PostgreSQL
-- JWT (io.jsonwebtoken)
-- Lombok
-- SpringDoc OpenAPI
-
-### Frontend
-- Flutter 3.9+
-- Provider (State Management)
-- HTTP
-- Shared Preferences
-- Material Design 3
-
-## 📄 Licence
-Ce projet est développé dans le cadre d'une application de gestion de crèche.
-
-## 👥 Équipe de Développement
-KidTrack Team - 2026
+ 
