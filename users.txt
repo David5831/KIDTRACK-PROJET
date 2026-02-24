@@ -1,0 +1,14 @@
+Admin
+email: david@gmail.com
+password: David@1234
+
+Educateur
+email: anne@gmail.com
+password: Anne@1234
+
+email: john@gmail.com
+password: John@1234
+
+Parent
+email: laurey@gmail.com
+password: Laurey@1234
